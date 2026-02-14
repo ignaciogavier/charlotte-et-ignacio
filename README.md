@@ -1,10 +1,9 @@
 # Charlotte & Ignacio - Wedding Website
 
-A beautiful, responsive single-page wedding website with password protection for privacy.
+A beautiful, responsive single-page wedding website.
 
 ## 🌟 Features
 
-- **Password Protection**: Private access with customizable password (default: "ourwedding")
 - **Responsive Design**: Mobile-friendly layout using flexbox and CSS grid
 - **Elegant Styling**: Subtle animations and transitions
 - **Complete Sections**:
@@ -64,15 +63,7 @@ Edit the `:root` selector in `style.css` to change:
 }
 ```
 
-### 3. Change Password
-
-Edit the `CONFIG` object in `script.js`:
-
-```javascript
-password: 'yourpassword',  // Change to your desired password
-```
-
-### 4. Add Google Form for RSVP
+### 3. Add Google Form for RSVP
 
 1. Create a form at [Google Forms](https://forms.google.com)
 2. Click **Send** → Select embed icon `</>` 
@@ -89,7 +80,7 @@ password: 'yourpassword',  // Change to your desired password
 </iframe>
 ```
 
-### 5. Add Custom Images
+### 4. Add Custom Images
 
 To add a hero background image:
 
@@ -109,17 +100,15 @@ To add a hero background image:
 charlotte-et-ignacio/
 ├── index.html          # Main HTML structure
 ├── style.css           # All styling and responsive design
-├── script.js           # Password protection and interactions
+├── script.js           # Interactive features
 ├── robots.txt          # Block search engines
 └── README.md           # This file
 ```
 
 ## 🔒 Privacy Features
 
-1. **Password Protection**: JavaScript-based password prompt on page load
-2. **robots.txt**: Blocks search engine crawlers
-3. **No-index Meta Tag**: Additional SEO protection in HTML
-4. **Session Storage**: Password persists during browser session only
+1. **robots.txt**: Blocks search engine crawlers
+2. **No-index Meta Tag**: Additional SEO protection in HTML
 
 ## 🌐 Browser Support
 
@@ -137,8 +126,6 @@ The site automatically adapts to:
 
 ## 💡 Tips
 
-- Test the password protection before sharing the link
-- Keep the password simple and easy to remember for guests
 - Update the Google Form link before the RSVP deadline
 - Consider adding your wedding colors to match your theme
 - Add high-quality images for better visual appeal

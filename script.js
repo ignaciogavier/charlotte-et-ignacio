@@ -1,100 +1,14 @@
 /**
  * Wedding Website JavaScript
- * Password protection and interactive features
+ * Interactive features
  */
-
-// Configuration - Edit these values
-const CONFIG = {
-    // Default password - Change this to your desired password
-    password: 'ourwedding',
-    
-    // Session storage key
-    storageKey: 'wedding_auth',
-    
-    // Password attempts before showing hint
-    maxAttempts: 3
-};
-
-// Track password attempts
-let attemptCount = 0;
 
 /**
  * Initialize the website
  */
 function init() {
-    // Check if user is already authenticated
-    if (sessionStorage.getItem(CONFIG.storageKey) === 'true') {
-        showMainContent();
-    } else {
-        // Set up password input listener
-        const passwordInput = document.getElementById('password-input');
-        if (passwordInput) {
-            passwordInput.addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    checkPassword();
-                }
-            });
-        }
-    }
-    
     // Add smooth scroll behavior for navigation
     addSmoothScroll();
-}
-
-/**
- * Check if entered password is correct
- */
-function checkPassword() {
-    const passwordInput = document.getElementById('password-input');
-    const errorMessage = document.getElementById('error-message');
-    const enteredPassword = passwordInput.value;
-    
-    if (enteredPassword === CONFIG.password) {
-        // Correct password
-        sessionStorage.setItem(CONFIG.storageKey, 'true');
-        
-        // Add fade out animation to overlay
-        const overlay = document.getElementById('password-overlay');
-        overlay.style.animation = 'fadeOut 0.5s ease';
-        
-        setTimeout(() => {
-            showMainContent();
-        }, 500);
-        
-        errorMessage.textContent = '';
-    } else {
-        // Incorrect password
-        attemptCount++;
-        
-        if (attemptCount >= CONFIG.maxAttempts) {
-            errorMessage.textContent = `Incorrect password. Hint: It's all lowercase, one word.`;
-        } else {
-            errorMessage.textContent = 'Incorrect password. Please try again.';
-        }
-        
-        // Shake animation for password container
-        const container = document.querySelector('.password-container');
-        container.style.animation = 'shake 0.5s ease';
-        
-        setTimeout(() => {
-            container.style.animation = 'slideUp 0.6s ease';
-        }, 500);
-        
-        // Clear input
-        passwordInput.value = '';
-        passwordInput.focus();
-    }
-}
-
-/**
- * Show main content and hide password overlay
- */
-function showMainContent() {
-    const overlay = document.getElementById('password-overlay');
-    const mainContent = document.getElementById('main-content');
-    
-    overlay.classList.add('hidden');
-    mainContent.classList.remove('hidden');
     
     // Trigger animations for sections as they come into view
     observeSections();
@@ -151,21 +65,10 @@ function observeSections() {
 }
 
 /**
- * Add shake animation to CSS dynamically
+ * Add smooth scroll animations
  */
 const style = document.createElement('style');
-style.textContent = `
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-        20%, 40%, 60%, 80% { transform: translateX(10px); }
-    }
-    
-    @keyframes fadeOut {
-        from { opacity: 1; }
-        to { opacity: 0; }
-    }
-`;
+style.textContent = ``;
 document.head.appendChild(style);
 
 // Initialize on page load
