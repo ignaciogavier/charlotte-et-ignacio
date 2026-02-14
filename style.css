@@ -3,14 +3,15 @@
    =================================== */
 :root {
     /* Colors - Edit these to match your theme */
-    --primary-color: #8b7355;
-    --secondary-color: #d4a574;
-    --accent-color: #f4e8d8;
-    --text-dark: #2c2c2c;
+    --primary-color: #A45551;
+    --secondary-color: #BE7A5B;
+    --accent-color: #CBBAB5;
+    --text-dark: #797E68;
     --text-light: #ffffff;
     --background-light: #fafafa;
     --background-card: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);
+    --tertiary-color: #AB8C7D;
     
     /* Fonts */
     --font-heading: 'Georgia', 'Times New Roman', serif;
@@ -348,7 +349,7 @@ body {
 }
 
 .hotel-link:hover {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 /* ===================================
