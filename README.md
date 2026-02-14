@@ -43,16 +43,16 @@ gh repo edit --enable-pages --pages-branch main --pages-path /
 ### 1. Update Wedding Details
 
 Edit `index.html` to change:
-- Couple names (line 29)
-- Wedding date and location (lines 31-33)
-- Ceremony details (lines 43-48)
-- Reception details (lines 50-55)
-- Hotel information (lines 77-111)
+- Couple names in the `.couple-names` heading
+- Wedding date and location in the `.wedding-date` section
+- Ceremony details in the ceremony card
+- Reception details in the reception card
+- Hotel information in the `.hotels-grid` section
 - All other text content
 
 ### 2. Customize Colors and Fonts
 
-Edit `style.css` (lines 5-21) to change:
+Edit the `:root` selector in `style.css` to change:
 
 ```css
 :root {
@@ -66,7 +66,7 @@ Edit `style.css` (lines 5-21) to change:
 
 ### 3. Change Password
 
-Edit `script.js` (line 9):
+Edit the `CONFIG` object in `script.js`:
 
 ```javascript
 password: 'yourpassword',  // Change to your desired password
@@ -77,7 +77,7 @@ password: 'yourpassword',  // Change to your desired password
 1. Create a form at [Google Forms](https://forms.google.com)
 2. Click **Send** → Select embed icon `</>` 
 3. Copy the iframe code
-4. In `index.html`, replace the placeholder div (lines 125-139) with your iframe:
+4. In `index.html`, replace the `.form-placeholder` div in the RSVP section with your iframe:
 
 ```html
 <iframe 
