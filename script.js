@@ -64,13 +64,6 @@ function observeSections() {
     }
 }
 
-/**
- * Add smooth scroll animations
- */
-const style = document.createElement('style');
-style.textContent = ``;
-document.head.appendChild(style);
-
 // Initialize on page load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
