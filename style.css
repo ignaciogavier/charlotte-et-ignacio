@@ -153,6 +153,7 @@ body {
     height: 64px;
     animation: bounce 2s ease-in-out infinite;
     cursor: default;
+    color: var(--text-light);
 }
 
 .scroll-indicator svg {
