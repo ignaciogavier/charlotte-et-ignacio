@@ -75,11 +75,12 @@ body {
     color: var(--text-light);
     padding: 8px 16px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    letter-spacing: 1px;
+    letter-spacing: 0;
+    line-height: 1;
 }
 
 .lang-btn:hover {
@@ -506,7 +507,7 @@ footer p {
     
     .lang-btn {
         padding: 6px 12px;
-        font-size: 0.85rem;
+        font-size: 1.3rem;
     }
     
     .couple-names {
@@ -546,7 +547,7 @@ footer p {
     
     .lang-btn {
         padding: 5px 10px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     
     .couple-names {
