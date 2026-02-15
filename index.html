@@ -12,6 +12,13 @@
     <div id="main-content">
         <!-- Hero Section -->
         <section class="hero">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="es">ES</button>
+            </div>
+            
             <div class="hero-content">
                 <h1 class="couple-names">Charlotte & Ignacio</h1>
                 <div class="wedding-date">
@@ -19,30 +26,30 @@
                     <p class="location">Villa Allende, Cordoba, Argentina</p>
                 </div>
                 <div class="save-the-date">
-                    <p>Save the Date</p>
+                    <p data-i18n="saveTheDate">Save the Date</p>
                 </div>
-                <div class="scroll-indicator">↓</div>
+                <div class="scroll-indicator" data-i18n="scrollDown">↓</div>
             </div>
         </section>
 
         <!-- Ceremony & Reception Section -->
         <section class="info-section" id="ceremony">
             <div class="container">
-                <h2>Ceremony & Reception</h2>
+                <h2 data-i18n="ceremonyReceptionTitle">Ceremony & Reception</h2>
                 <div class="info-grid">
                     <div class="info-card">
-                        <h3>💒 Ceremony</h3>
-                        <p><strong>Time:</strong> 4:00 PM</p>
-                        <p><strong>Location:</strong> Villa Golf Eventos</p>
-                        <p><strong>Address:</strong> Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina</p>
-                        <p>Join us for an intimate outdoor ceremony in the beautiful gardens.</p>
+                        <h3 data-i18n="ceremonyTitle">💒 Ceremony</h3>
+                        <p><strong data-i18n="ceremonyTime">Time:</strong> <span data-i18n="ceremonyTimeValue">4:00 PM</span></p>
+                        <p><strong data-i18n="ceremonyLocation">Location:</strong> <span data-i18n="ceremonyLocationValue">Villa Golf Eventos</span></p>
+                        <p><strong data-i18n="ceremonyAddress">Address:</strong> <span data-i18n="ceremonyAddressValue">Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina</span></p>
+                        <p data-i18n="ceremonyDescription">Join us for an intimate outdoor ceremony in the beautiful gardens.</p>
                     </div>
                     <div class="info-card">
-                        <h3>🥂 Reception</h3>
-                        <p><strong>Time:</strong> 6:00 PM - 11:00 PM</p>
-                        <p><strong>Location:</strong> Villa Golf Eventos</p>
-                        <p><strong>Address:</strong> Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina</p>
-                        <p>Dinner, drinks, and dancing to follow the ceremony.</p>
+                        <h3 data-i18n="receptionTitle">🥂 Reception</h3>
+                        <p><strong data-i18n="receptionTime">Time:</strong> <span data-i18n="receptionTimeValue">6:00 PM - 11:00 PM</span></p>
+                        <p><strong data-i18n="receptionLocation">Location:</strong> <span data-i18n="receptionLocationValue">Villa Golf Eventos</span></p>
+                        <p><strong data-i18n="receptionAddress">Address:</strong> <span data-i18n="receptionAddressValue">Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina</span></p>
+                        <p data-i18n="receptionDescription">Dinner, drinks, and dancing to follow the ceremony.</p>
                     </div>
                 </div>
             </div>
@@ -51,11 +58,11 @@
         <!-- Dress Code Section -->
         <section class="info-section dress-code" id="dress-code">
             <div class="container">
-                <h2>Dress Code</h2>
+                <h2 data-i18n="dressCodeTitle">Dress Code</h2>
                 <div class="dress-code-content">
-                    <p class="dress-code-title">Formal / Black Tie Optional</p>
-                    <p>We kindly request formal attire for our special day. Ladies, think elegant evening gowns or cocktail dresses. Gentlemen, a dark suit or tuxedo would be perfect.</p>
-                    <p>Please note: The ceremony will be held outdoors, so consider comfortable yet elegant footwear.</p>
+                    <p class="dress-code-title" data-i18n="dressCodeType">Formal / Black Tie Optional</p>
+                    <p data-i18n="dressCodeDescription">We kindly request formal attire for our special day. Ladies, think elegant evening gowns or cocktail dresses. Gentlemen, a dark suit or tuxedo would be perfect.</p>
+                    <p data-i18n="dressCodeNote">Please note: The ceremony will be held outdoors, so consider comfortable yet elegant footwear.</p>
                 </div>
             </div>
         </section>
@@ -63,32 +70,32 @@
         <!-- Hotels Section -->
         <section class="info-section" id="hotels">
             <div class="container">
-                <h2>Accommodations</h2>
-                <p class="section-intro">We have reserved room blocks at the following hotels for your convenience:</p>
+                <h2 data-i18n="accommodationsTitle">Accommodations</h2>
+                <p class="section-intro" data-i18n="accommodationsIntro">We have reserved room blocks at the following hotels for your convenience:</p>
                 <div class="hotels-grid">
                     <div class="hotel-card">
-                        <h3>Hotel Villa Allende</h3>
-                        <p><strong>Address:</strong> Villa Allende, Cordoba, Argentina</p>
-                        <p><strong>Rate:</strong> TBD</p>
-                        <p><strong>Book by:</strong> May 15, 2026</p>
-                        <p><strong>Code:</strong> CHARLOTTE-IGNACIO</p>
-                        <a href="#" class="hotel-link">Visit Website →</a>
+                        <h3 data-i18n="hotel1Name">Hotel Villa Allende</h3>
+                        <p><strong data-i18n="hotelAddress">Address:</strong> <span data-i18n="hotel1Address">Villa Allende, Cordoba, Argentina</span></p>
+                        <p><strong data-i18n="hotelRate">Rate:</strong> <span data-i18n="hotelRateValue">TBD</span></p>
+                        <p><strong data-i18n="hotelBookBy">Book by:</strong> <span data-i18n="hotelBookByValue">May 15, 2026</span></p>
+                        <p><strong data-i18n="hotelCode">Code:</strong> <span data-i18n="hotelCodeValue">CHARLOTTE-IGNACIO</span></p>
+                        <a href="#" class="hotel-link" data-i18n="hotelLink">Visit Website →</a>
                     </div>
                     <div class="hotel-card">
-                        <h3>Hotel Cordoba</h3>
-                        <p><strong>Address:</strong> Cordoba, Argentina</p>
-                        <p><strong>Rate:</strong> TBD</p>
-                        <p><strong>Book by:</strong> May 15, 2026</p>
-                        <p><strong>Code:</strong> CHARLOTTE-IGNACIO</p>
-                        <a href="#" class="hotel-link">Visit Website →</a>
+                        <h3 data-i18n="hotel2Name">Hotel Cordoba</h3>
+                        <p><strong data-i18n="hotelAddress">Address:</strong> <span data-i18n="hotel2Address">Cordoba, Argentina</span></p>
+                        <p><strong data-i18n="hotelRate">Rate:</strong> <span data-i18n="hotelRateValue">TBD</span></p>
+                        <p><strong data-i18n="hotelBookBy">Book by:</strong> <span data-i18n="hotelBookByValue">May 15, 2026</span></p>
+                        <p><strong data-i18n="hotelCode">Code:</strong> <span data-i18n="hotelCodeValue">CHARLOTTE-IGNACIO</span></p>
+                        <a href="#" class="hotel-link" data-i18n="hotelLink">Visit Website →</a>
                     </div>
                     <div class="hotel-card">
-                        <h3>Local Accommodations</h3>
-                        <p><strong>Address:</strong> Villa Allende Area</p>
-                        <p><strong>Rate:</strong> TBD</p>
-                        <p><strong>Book by:</strong> May 15, 2026</p>
-                        <p><strong>Code:</strong> CHARLOTTE-IGNACIO</p>
-                        <a href="#" class="hotel-link">Visit Website →</a>
+                        <h3 data-i18n="hotel3Name">Local Accommodations</h3>
+                        <p><strong data-i18n="hotelAddress">Address:</strong> <span data-i18n="hotel3Address">Villa Allende Area</span></p>
+                        <p><strong data-i18n="hotelRate">Rate:</strong> <span data-i18n="hotelRateValue">TBD</span></p>
+                        <p><strong data-i18n="hotelBookBy">Book by:</strong> <span data-i18n="hotelBookByValue">May 15, 2026</span></p>
+                        <p><strong data-i18n="hotelCode">Code:</strong> <span data-i18n="hotelCodeValue">CHARLOTTE-IGNACIO</span></p>
+                        <a href="#" class="hotel-link" data-i18n="hotelLink">Visit Website →</a>
                     </div>
                 </div>
             </div>
@@ -97,13 +104,13 @@
         <!-- Registry Section -->
         <section class="info-section registry" id="registry">
             <div class="container">
-                <h2>Registry</h2>
+                <h2 data-i18n="registryTitle">Registry</h2>
                 <div class="registry-content">
-                    <p>Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, we have registered at the following locations:</p>
+                    <p data-i18n="registryDescription">Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, we have registered at the following locations:</p>
                     <div class="registry-links">
-                        <a href="#" class="registry-button">View Registry →</a>
+                        <a href="#" class="registry-button" data-i18n="registryButton">View Registry →</a>
                     </div>
-                    <p class="registry-note">We will also have a card box available at the reception.</p>
+                    <p class="registry-note" data-i18n="registryNote">We will also have a card box available at the reception.</p>
                 </div>
             </div>
         </section>
@@ -111,8 +118,8 @@
         <!-- RSVP Section -->
         <section class="info-section rsvp" id="rsvp">
             <div class="container">
-                <h2>RSVP</h2>
-                <p class="section-intro">Please let us know if you can join us by April 30, 2026</p>
+                <h2 data-i18n="rsvpTitle">RSVP</h2>
+                <p class="section-intro" data-i18n="rsvpIntro">Please let us know if you can join us by April 30, 2026</p>
                 <div class="rsvp-container">
                     <!-- Google Form Embed -->
                     <!-- 
@@ -135,7 +142,8 @@
                         width="100%" 
                         height="900" 
                         marginheight="0" 
-                        marginwidth="0">
+                        marginwidth="0"
+                        data-i18n="rsvpLoading">
                         Loading Google Form...
                     </iframe>
                 </div>
@@ -145,9 +153,9 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <p>We can't wait to celebrate with you!</p>
+                <p data-i18n="footerMessage">We can't wait to celebrate with you!</p>
                 <p class="footer-names">Charlotte & Ignacio</p>
-                <p class="footer-date">June 15, 2026 • Villa Allende, Cordoba, Argentina</p>
+                <p class="footer-date" data-i18n="footerDate">June 15, 2026 • Villa Allende, Cordoba, Argentina</p>
             </div>
         </footer>
     </div>
