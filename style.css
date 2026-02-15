@@ -359,6 +359,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 15px var(--shadow);
     background: var(--background-card);
+    max-width: 100%;
 }
 
 /* ===================================
