@@ -65,16 +65,20 @@ Edit the `:root` selector in `style.css` to change:
 
 ### 3. Add Google Form for RSVP
 
-1. Create a form at [Google Forms](https://forms.google.com)
-2. Click **Send** → Select embed icon `</>` 
+The RSVP section now includes a Google Form (https://forms.gle/Qy9ij2bWY4SBDgHU7).
+
+**If you need to update the form:**
+
+1. Visit the Google Form URL in your browser
+2. In Google Forms editor, click **Send** → Select embed icon `</>` 
 3. Copy the iframe code
-4. In `index.html`, replace the `.form-placeholder` div in the RSVP section with your iframe:
+4. In `index.html`, replace the iframe src in the RSVP section with your new form ID:
 
 ```html
 <iframe 
     src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
     width="100%" 
-    height="800" 
+    height="900" 
     frameborder="0">
     Loading…
 </iframe>

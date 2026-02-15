@@ -352,6 +352,15 @@ body {
     font-weight: 600;
 }
 
+/* Google Form iframe styling */
+.rsvp-container iframe {
+    display: block;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow);
+    background: var(--background-card);
+}
+
 /* ===================================
    Footer
    =================================== */
