@@ -14,8 +14,8 @@
     --tertiary-color: #AB8C7D;
     
     /* Fonts */
-    --font-heading: 'Georgia', 'Times New Roman', serif;
-    --font-body: 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+    --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
     
     /* Spacing */
     --spacing-small: 1rem;
