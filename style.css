@@ -143,18 +143,6 @@ body {
     opacity: 0.9;
 }
 
-.save-the-date {
-    margin-top: var(--spacing-large);
-    padding: 15px 30px;
-    border: 2px solid var(--text-light);
-    border-radius: 50px;
-    display: inline-block;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    animation: pulse 2s ease-in-out infinite;
-}
-
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -528,11 +516,6 @@ footer p {
     
     .wedding-date .location {
         font-size: 1.1rem;
-    }
-    
-    .save-the-date {
-        font-size: 1rem;
-        padding: 12px 25px;
     }
     
     .info-section h2 {
