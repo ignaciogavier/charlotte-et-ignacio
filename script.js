@@ -11,7 +11,6 @@ const translations = {
         // Hero section
         heroDate: "October 9, 2026",
         saveTheDate: "Save the Date",
-        scrollDown: "↓",
         
         // Ceremony & Reception section
         ceremonyReceptionTitle: "Ceremony & Reception",
@@ -75,7 +74,6 @@ const translations = {
         // Hero section
         heroDate: "9 de Octubre, 2026",
         saveTheDate: "Reserva la Fecha",
-        scrollDown: "↓",
         
         // Ceremony & Reception section
         ceremonyReceptionTitle: "Ceremonia y Recepción",
