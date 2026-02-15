@@ -13,7 +13,7 @@
  */
 const formIds = {
     en: '1FAIpQLSebbwXp-TFMfnIMELcKmy1-qLcG2MsgRjji0goOUqNZLUFZiw', // English form ID
-    es: '1cN7rjQ300u-OwsWeaTFH_vo6sLIrXOXj_lFm5-GX7d4'  // Spanish form ID
+    es: '1FAIpQLSfYzc2iQg1ahsiRgZ1kMBQnKl1YZRZ550mlv9icVO56mvmeww'  // Spanish form ID
 };
 
 /**
