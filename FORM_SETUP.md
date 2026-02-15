@@ -27,7 +27,7 @@ Google Forms short URLs (like `https://forms.gle/Qy9ij2bWY4SBDgHU7`) do not work
 
 4. **Update index.html:**
    - Open `index.html`
-   - Find the RSVP section (around line 128)
+   - Find the RSVP section (search for `id="rsvp"` or the comment `<!-- Google Form Embed -->`)
    - Replace the iframe `src` with the URL you copied:
      ```html
      <iframe 
