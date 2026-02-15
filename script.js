@@ -4,6 +4,19 @@
  */
 
 /**
+ * Google Form IDs for different languages
+ * Update these with your actual Google Form IDs
+ * To get the form ID:
+ * 1. Open your Google Form
+ * 2. Click Send button -> Embed icon (</>)
+ * 3. Copy the long ID between /d/e/ and /viewform
+ */
+const formIds = {
+    en: '1FAIpQLSfYzc2iQg1ahsiRgZ1kMBQnKl1YZRZ550mlv9icVO56mvmeww', // English form ID
+    es: '1FAIpQLSfYzc2iQg1ahsiRgZ1kMBQnKl1YZRZ550mlv9icVO56mvmeww'  // Spanish form ID (update this!)
+};
+
+/**
  * Translations for the website
  */
 const translations = {
@@ -147,6 +160,17 @@ function setLanguage(lang) {
     localStorage.setItem('language', lang);
     updateContent(lang);
     updateLanguageSelector(lang);
+    updateFormLanguage(lang);
+}
+
+/**
+ * Update the Google Form based on selected language
+ */
+function updateFormLanguage(lang) {
+    const iframe = document.getElementById('rsvp-form');
+    if (iframe && formIds[lang]) {
+        iframe.src = `https://docs.google.com/forms/d/e/${formIds[lang]}/viewform?embedded=true`;
+    }
 }
 
 /**
@@ -190,6 +214,7 @@ function init() {
     const currentLang = getCurrentLanguage();
     updateContent(currentLang);
     updateLanguageSelector(currentLang);
+    updateFormLanguage(currentLang);
     
     // Add language selector event listeners
     document.querySelectorAll('.lang-btn').forEach(btn => {
