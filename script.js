@@ -44,7 +44,7 @@ const translations = {
         hotelRate: "Rate:",
         hotelRateValue: "TBD",
         hotelBookBy: "Book by:",
-        hotelBookByValue: "May 15, 2026",
+        hotelBookByValue: "August 31, 2026",
         hotelCode: "Code:",
         hotelCodeValue: "CHARLOTTE-IGNACIO",
         hotelLink: "Visit Website →",
@@ -63,12 +63,12 @@ const translations = {
         
         // RSVP section
         rsvpTitle: "RSVP",
-        rsvpIntro: "Please let us know if you can join us by April 30, 2026",
+        rsvpIntro: "Please let us know if you can join us by August 31, 2026",
         rsvpLoading: "Loading Google Form...",
         
         // Footer
         footerMessage: "We can't wait to celebrate with you!",
-        footerDate: "June 15, 2026 • Villa Allende, Córdoba, Argentina"
+        footerDate: "October 9, 2026 • Villa Allende, Córdoba, Argentina"
     },
     es: {
         // Hero section
@@ -107,7 +107,7 @@ const translations = {
         hotelRate: "Tarifa:",
         hotelRateValue: "A confirmar",
         hotelBookBy: "Reservar antes de:",
-        hotelBookByValue: "15 de Mayo, 2026",
+        hotelBookByValue: "31 de Agosto, 2026",
         hotelCode: "Código:",
         hotelCodeValue: "CHARLOTTE-IGNACIO",
         hotelLink: "Visitar Sitio Web →",
@@ -126,12 +126,12 @@ const translations = {
         
         // RSVP section
         rsvpTitle: "Confirmación de Asistencia",
-        rsvpIntro: "Por favor confirma si puedes acompañarnos antes del 30 de Abril, 2026",
+        rsvpIntro: "Por favor confirma si puedes acompañarnos antes del 31 de Agosto, 2026",
         rsvpLoading: "Cargando formulario de Google...",
         
         // Footer
         footerMessage: "¡No podemos esperar para celebrar con ustedes!",
-        footerDate: "15 de Junio, 2026 • Villa Allende, Córdoba, Argentina"
+        footerDate: "9 de Octubre, 2026 • Villa Allende, Córdoba, Argentina"
     }
 };
 
