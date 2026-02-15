@@ -50,7 +50,7 @@ const translations = {
         hotelLink: "Visit Website →",
         hotel1Name: "Hotel Villa Allende",
         hotel1Address: "Villa Allende, Córdoba, Argentina",
-        hotel2Name: "Hotel Cordoba",
+        hotel2Name: "Hotel Córdoba",
         hotel2Address: "Córdoba, Argentina",
         hotel3Name: "Local Accommodations",
         hotel3Address: "Villa Allende Area",
