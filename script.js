@@ -20,7 +20,7 @@ const translations = {
         ceremonyLocation: "Location:",
         ceremonyLocationValue: "Villa Golf Eventos",
         ceremonyAddress: "Address:",
-        ceremonyAddressValue: "Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina",
+        ceremonyAddressValue: "Av. Padre Luchesse km 4 1/2, Villa Allende, Córdoba, Argentina",
         ceremonyDescription: "Join us for an intimate outdoor ceremony in the beautiful gardens.",
         receptionTitle: "🥂 Reception",
         receptionTime: "Time:",
@@ -28,7 +28,7 @@ const translations = {
         receptionLocation: "Location:",
         receptionLocationValue: "Villa Golf Eventos",
         receptionAddress: "Address:",
-        receptionAddressValue: "Av. Padre Luchesse km 4 1/2, Villa Allende, Cordoba, Argentina",
+        receptionAddressValue: "Av. Padre Luchesse km 4 1/2, Villa Allende, Córdoba, Argentina",
         receptionDescription: "Dinner, drinks, and dancing to follow the ceremony.",
         
         // Dress Code section
@@ -49,9 +49,9 @@ const translations = {
         hotelCodeValue: "CHARLOTTE-IGNACIO",
         hotelLink: "Visit Website →",
         hotel1Name: "Hotel Villa Allende",
-        hotel1Address: "Villa Allende, Cordoba, Argentina",
+        hotel1Address: "Villa Allende, Córdoba, Argentina",
         hotel2Name: "Hotel Cordoba",
-        hotel2Address: "Cordoba, Argentina",
+        hotel2Address: "Córdoba, Argentina",
         hotel3Name: "Local Accommodations",
         hotel3Address: "Villa Allende Area",
         
@@ -68,7 +68,7 @@ const translations = {
         
         // Footer
         footerMessage: "We can't wait to celebrate with you!",
-        footerDate: "June 15, 2026 • Villa Allende, Cordoba, Argentina"
+        footerDate: "June 15, 2026 • Villa Allende, Córdoba, Argentina"
     },
     es: {
         // Hero section
