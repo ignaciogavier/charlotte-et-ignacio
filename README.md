@@ -65,7 +65,7 @@ Edit the `:root` selector in `style.css` to change:
 
 ### 3. Add Google Form for RSVP
 
-The RSVP section now includes a Google Form (https://forms.gle/Qy9ij2bWY4SBDgHU7).
+The RSVP section now includes a Google Form ([https://forms.gle/Qy9ij2bWY4SBDgHU7](https://docs.google.com/forms/d/e/1FAIpQLSfYzc2iQg1ahsiRgZ1kMBQnKl1YZRZ550mlv9icVO56mvmeww/viewform?usp=dialog)).
 
 **If you need to update the form:**
 
