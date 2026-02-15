@@ -14,8 +14,8 @@
     --tertiary-color: #AB8C7D;
     
     /* Fonts */
-    --font-heading: 'Georgia', 'Times New Roman', serif;
-    --font-body: 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+    --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
     
     /* Spacing */
     --spacing-small: 1rem;
@@ -56,6 +56,48 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+/* Language Selector */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: var(--text-light);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.lang-btn.active {
+    background: var(--text-light);
+    color: var(--primary-color);
+    border-color: var(--text-light);
+}
+
+.lang-separator {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .hero::before {
@@ -456,6 +498,17 @@ footer p {
         --spacing-large: 2.5rem;
     }
     
+    .language-selector {
+        top: 15px;
+        right: 15px;
+        gap: 6px;
+    }
+    
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+    
     .couple-names {
         font-size: 2.5rem;
         letter-spacing: 2px;
@@ -486,6 +539,16 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .language-selector {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lang-btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    
     .couple-names {
         font-size: 2rem;
     }
@@ -507,6 +570,7 @@ footer p {
    Print Styles
    =================================== */
 @media print {
+    .language-selector,
     .scroll-indicator {
         display: none;
     }
