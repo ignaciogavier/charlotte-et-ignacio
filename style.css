@@ -296,7 +296,8 @@ body {
     font-size: 0.95rem;
 }
 
-.hotel-link {
+.hotel-link,
+.venue-link {
     display: inline-block;
     margin-top: var(--spacing-small);
     color: var(--primary-color);
@@ -305,7 +306,8 @@ body {
     transition: color 0.3s ease;
 }
 
-.hotel-link:hover {
+.hotel-link:hover,
+.venue-link:hover {
     color: var(--tertiary-color);
 }
 
