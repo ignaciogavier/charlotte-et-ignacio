@@ -354,6 +354,34 @@ body {
 /* ===================================
    RSVP Section
    =================================== */
+.rsvp-open-btn-container {
+    text-align: center;
+    margin-bottom: var(--spacing-medium);
+}
+
+.rsvp-open-btn {
+    display: inline-block;
+    padding: 18px 48px;
+    background: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rsvp-open-btn:hover,
+.rsvp-open-btn:focus {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px var(--shadow);
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 .rsvp-container {
     max-width: 800px;
     margin: var(--spacing-medium) auto 0;
@@ -530,6 +558,13 @@ footer p {
     .hotels-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-small);
+    }
+
+    .rsvp-open-btn {
+        font-size: 1.1rem;
+        padding: 16px 36px;
+        width: 100%;
+        text-align: center;
     }
 }
 
