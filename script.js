@@ -78,6 +78,7 @@ const translations = {
         // RSVP section
         rsvpTitle: "RSVP",
         rsvpIntro: "Please let us know if you can join us by August 31, 2026",
+        rsvpOpenForm: "📝 Open Form in New Tab",
         rsvpLoading: "Loading Google Form...",
         
         // Footer
@@ -142,6 +143,7 @@ const translations = {
         // RSVP section
         rsvpTitle: "Confirmación de Asistencia",
         rsvpIntro: "Por favor confirma si puedes acompañarnos antes del 31 de Agosto, 2026",
+        rsvpOpenForm: "📝 Abrir formulario en nueva pestaña",
         rsvpLoading: "Cargando formulario de Google...",
         
         // Footer
@@ -174,6 +176,10 @@ function updateFormLanguage(lang) {
     const iframe = document.getElementById('rsvp-form');
     if (iframe && formIds[lang]) {
         iframe.src = `https://docs.google.com/forms/d/e/${formIds[lang]}/viewform?embedded=true`;
+    }
+    const openBtn = document.getElementById('rsvp-open-btn');
+    if (openBtn && formIds[lang]) {
+        openBtn.href = `https://docs.google.com/forms/d/e/${formIds[lang]}/viewform`;
     }
 }
 
