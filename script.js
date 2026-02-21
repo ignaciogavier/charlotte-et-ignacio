@@ -170,13 +170,9 @@ function setLanguage(lang) {
 }
 
 /**
- * Update the Google Form based on selected language
+ * Update the Google Form link based on selected language
  */
 function updateFormLanguage(lang) {
-    const iframe = document.getElementById('rsvp-form');
-    if (iframe && formIds[lang]) {
-        iframe.src = `https://docs.google.com/forms/d/e/${formIds[lang]}/viewform?embedded=true`;
-    }
     const openBtn = document.getElementById('rsvp-open-btn');
     if (openBtn && formIds[lang]) {
         openBtn.href = `https://docs.google.com/forms/d/e/${formIds[lang]}/viewform`;
@@ -241,8 +237,10 @@ function init() {
 function addSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
