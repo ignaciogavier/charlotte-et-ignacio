@@ -1,28 +1,38 @@
-/* Definimos tu paleta de colores basada en los parámetros HSL */
+/* Definimos tu paleta de colores HSL */
 :root {
-    --bg-color: hsl(0, 0%, 96.08%);       /* Gris muy claro (fondo) */
-    --text-color: hsl(0, 0%, 7.06%);      /* Gris muy oscuro (textos) */
-    --accent-color: hsl(1.94, 38.59%, 47.25%); /* Terracota rojizo (botones/acentos) */
+    --bg-color: hsl(0, 0%, 96.08%);       /* Crema/Gris muy claro (fondo) */
+    --text-color: hsl(0, 0%, 7.06%);      /* Gris oscuro (textos pequeños) */
+    --accent-color: hsl(1.94, 38.59%, 47.25%); /* Terracota rojizo (títulos y acentos) */
 }
 
-/* 1. COLOR DE FONDO */
-body, .page-section, .section-background, .header-background, .header-menu-bg {
+/* 1. COLOR DE FONDO UNIFICADO */
+/* Esto elimina la caja blanca del menú superior y unifica toda la página */
+body, .page-section, .section-background, .header-background, .header-inner, .header-menu-bg {
     background-color: var(--bg-color) !important; 
 }
 
-/* 2. COLOR DEL TEXTO */
-h1, h2, h3, h4, p, a, .sqs-html-content, .header-nav-item a {
+/* 2. TÍTULOS Y NOMBRES EN TERRACOTA */
+/* Aplica al logo (Charlotte & Ignacio) y a los nombres gigantes */
+h1, h2, h3, h4, #site-title {
+    color: var(--accent-color) !important; 
+}
+
+/* 3. TEXTOS SECUNDARIOS EN GRIS OSCURO */
+/* Aplica a los links de "WEDDING TRAVEL REGISTRY" y textos como "♡♡" */
+p, .header-nav-item a, .sqs-html-content p {
     color: var(--text-color) !important; 
 }
 
-/* 3. LÍNEAS DIVISORIAS */
+/* 4. LÍNEAS DIVISORIAS EN TERRACOTA */
 hr {
-    border-color: var(--text-color) !important;
+    border-color: var(--accent-color) !important;
+    background-color: var(--accent-color) !important;
 }
 
-/* 4. COLOR DE LOS BOTONES Y ACENTOS */
+/* 5. BOTÓN RSVP CON CONTORNO */
+/* Le quitamos el fondo sólido y le ponemos el texto y borde terracota */
 .btn, .sqs-button-element--primary {
-    background-color: var(--accent-color) !important;
-    color: var(--bg-color) !important;
-    border-color: var(--accent-color) !important;
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+    border: 1px solid var(--accent-color) !important;
 }
