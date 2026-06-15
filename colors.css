@@ -1,0 +1,28 @@
+/* Definimos tu paleta de colores basada en los parámetros HSL */
+:root {
+    --bg-color: hsl(0, 0%, 96.08%);       /* Gris muy claro (fondo) */
+    --text-color: hsl(0, 0%, 7.06%);      /* Gris muy oscuro (textos) */
+    --accent-color: hsl(1.94, 38.59%, 47.25%); /* Terracota rojizo (botones/acentos) */
+}
+
+/* 1. COLOR DE FONDO */
+body, .page-section, .section-background, .header-background, .header-menu-bg {
+    background-color: var(--bg-color) !important; 
+}
+
+/* 2. COLOR DEL TEXTO */
+h1, h2, h3, h4, p, a, .sqs-html-content, .header-nav-item a {
+    color: var(--text-color) !important; 
+}
+
+/* 3. LÍNEAS DIVISORIAS */
+hr {
+    border-color: var(--text-color) !important;
+}
+
+/* 4. COLOR DE LOS BOTONES Y ACENTOS */
+.btn, .sqs-button-element--primary {
+    background-color: var(--accent-color) !important;
+    color: var(--bg-color) !important;
+    border-color: var(--accent-color) !important;
+}
